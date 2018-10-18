@@ -1,0 +1,35 @@
+{
+  "name": "orchestrationdesk",
+  "version": "1.0.3",
+  "description": "Node module to connect to orchestration services e.g. marathon to get details about applications and containers.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc && yarn lint && yarn test",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "preversion": "yarn lint"
+  },
+  "author": "Parth Patel",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/request": "^2.47.1",
+    "es6-symbol": "^3.1.1",
+    "request": "^2.87.0",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.4",
+    "jest": "^23.4.1",
+    "prettier": "^1.14.0",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0"
+  }
+}
