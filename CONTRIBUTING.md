@@ -1,1 +1,1 @@
-Please contact parth.patel45@t-mobile.com for details on our code of conduct, and the process for submitting pull requests to us.
+Please contact parth.dp1990@gmail.com for details on our code of conduct, and the process for submitting pull requests to us.

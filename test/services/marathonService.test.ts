@@ -17,7 +17,6 @@ limitations under the License.
 See the README.md file for additional language around disclaimer of warranties.
 */
 
-import { } from 'jasmine';
 import { HttpService } from '../../src/common/httpService';
 import { IIPAddress } from '../../src/models/ipAddress/ipAddress.interface';
 import { MarathonService } from '../../src/services/marathonService';

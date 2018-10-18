@@ -7,16 +7,18 @@ const controller: IPAddressController = new IPAddressController(config.marathonU
 
 //.... store applications name you want to get the ipaddress and ports in application array.
 
-applications.forEach((application: any) => {
+applications.forEach((application: IApplication) => {
 
-    controller.getIPAddresses(application.marathonAppId)
-        .then((response: Array<IIPAddress>) => {
-            response.forEach((ipAddress: IIPAddress) => {
-                console.log(util.format(config.serviceIPMessageFormat, application.marathonAppId, ipAddress.IP, ipAddress.Port));
+                this.controller.getIPAddresses(
+                    application.applicationId,
+                    new AdapterFactory(this.config.userNameOrchestrationApi, this.config.passwordOrchestrationApi, ServiceType.Marathon))
+                    .then((response: IIPAddress[]) => {
+                        response.forEach((ipAddress: IIPAddress) => {
+                            // .. do your stuff with ip and ports
+                        });
+                    }).catch(
+                        // .. handle error
+                    );
             });
-        }).catch(
-            (error:any) => console.error(config.errorServiceConnectionMessageFormat, application.marathonAppId, error)
-        );
-});
 
 ```
