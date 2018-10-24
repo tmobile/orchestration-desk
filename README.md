@@ -37,4 +37,6 @@ THIS SOFTWARE IS OPEN SOURCE SOFTWARE AND RELIES ON OTHER OPEN SOURCE SOFTWARE F
 
 ## NOTICE
 
-The MetroPCS team has made every effort to review and test the present released version this software.  However, as with all software, a party should independently evaluate this software and any modifications prior to any use
+The T-Mobile team has made every effort to review and test the present released version this software. However, as with all software, a party should independently evaluate this software and any modifications prior to any use
+
+T-Mobile is a trademark of T-Mobile USA.
