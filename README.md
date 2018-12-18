@@ -1,6 +1,9 @@
 ### Orchestration-Desk
 - Node module to connect to orchestration services like marathon, kubernetes etc to get details about applications, containers and more.
 
+### Blog
+- https://orchestration-desk.blogspot.com/
+
 ## Installing
 - Install yarn 1.5.1 or above. Visit https://yarnpkg.com/lang/en/docs/install/
 - yarn add orchestrationdesk --save
