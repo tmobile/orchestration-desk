@@ -27,7 +27,7 @@ import { ILogger } from '../adapters/logger.interface';
 import { IServiceAdapter } from '../adapters/service-adapter.interface';
 import { IConfiguration } from '../configuration.interface';
 
-import { SigmaServiceAdapter } from '../adapters/sigma-service-adapter';
+import { ServiceAdapter } from '../adapters/service-adapter';
 import { serviceAdminProvider } from '../identityProviders/serviceAdminProvider';
 import { IApplication } from '../refresh.configuration';
 
@@ -79,7 +79,7 @@ export class ConfigController {
         url: string,
         adminUsername: string,
         adminPassword: string): Promise<string> {
-            const serviceAdapter: IServiceAdapter = new SigmaServiceAdapter(new URL(url));
+            const serviceAdapter: IServiceAdapter = new ServiceAdapter(new URL(url));
             serviceAdminProvider.setUsername(adminUsername);
             serviceAdminProvider.setPassword(adminPassword);
         return serviceAdapter.refreshConfig(applicationName);

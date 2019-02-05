@@ -25,7 +25,7 @@ import { HttpService } from "../../orchestration-desk/src/common/httpService";
 import { serviceAdminProvider } from "../identityProviders/serviceAdminProvider";
 
 
-export class SigmaServiceAdapter implements IServiceAdapter {
+export class ServiceAdapter implements IServiceAdapter {
 
     private httpService: HttpService;
 
@@ -36,7 +36,7 @@ export class SigmaServiceAdapter implements IServiceAdapter {
     public refreshConfig(configRefreshPath: string): Promise<string> {
         const headers = {
             'Authorization': 'Basic ' + serviceAdminProvider.getEncodedAuthorizationToken(),
-            'Referer': 'www.metropcs.com'
+            'Referer': 'foo.bar.com'
         };
 
         const apiUrl: URL = new URL(configRefreshPath, this.url);
