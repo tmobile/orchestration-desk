@@ -35,8 +35,7 @@ export class ServiceAdapter implements IServiceAdapter {
 
     public refreshConfig(configRefreshPath: string): Promise<string> {
         const headers = {
-            'Authorization': 'Basic ' + serviceAdminProvider.getEncodedAuthorizationToken(),
-            'Referer': 'foo.bar.com'
+            'Authorization': 'Basic ' + serviceAdminProvider.getEncodedAuthorizationToken()
         };
 
         const apiUrl: URL = new URL(configRefreshPath, this.url);
