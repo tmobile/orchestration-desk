@@ -22,3 +22,11 @@ applications.forEach((application: IApplication) => {
             });
 
 ```
+
+### Toggle Refresher
+- Toggle refresher app is an application using orchestration desk to ping refresh endpoints on containers deployed on marathon.
+
+- Visit toggle refresher directory
+- yarn install
+- cd dist/toggle-refresher
+- node index.js <abosolutePathToConfig> e.g. node index.js /pathToToggleRefresher/config.dev.js

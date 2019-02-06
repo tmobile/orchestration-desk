@@ -6,9 +6,11 @@
 
 ## Installing
 - Install yarn 1.5.1 or above. Visit https://yarnpkg.com/lang/en/docs/install/
-- yarn add orchestrationdesk --save
+- yarn install
 
 ## Examples
+# Toggle-Refresher
+- Application using orchestration-desk to refresh toggles.
 Refer DOC.md for examples.
 
 ## Compiling the project

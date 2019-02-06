@@ -1,6 +1,12 @@
-yarn-error.log
-coverage
-node_modules/*
-lib/*
+orchestration-desk/yarn-error.log
+orchestration-desk/coverage
+orchestration-desk/node_modules/*
+orchestration-desk/lib/*
+orchestration-desk/.*
+toggle-refresher/yarn-error.log
+toggle-refresher/coverage
+toggle-refresher/node_modules/*
+toggle-refresher/dist/*
+toggle-refresher/.*
 .*
 !.gitignore
