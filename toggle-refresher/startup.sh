@@ -23,8 +23,8 @@
 run() {
 
     echo 'For' $1 'environment';
-    cat ./config/config.$1.js | sed -- $regexUsername | sed -- $regexPassword > ./dist/config.js
-    cd ./dist/
+    cat ./config/config.$1.js | sed -- $regexUsername | sed -- $regexPassword > ./dist/toggle-refresher/config.js
+    cd ./dist/toggle-refresher
     echo 'node index.js' $(pwd)'/config.js'
     node index.js $(pwd)/config.js
     rm -f ./config.js || true
@@ -35,7 +35,6 @@ run() {
 regexUsername='s/foobarUsername/'$MARATHON_USERNAME'/g'
 regexPassword='s/foobarPassoword/'$MARATHON_PASSWORD'/g'
 
-cd /opt/src
 echo 'node --version'
 node --version
 
