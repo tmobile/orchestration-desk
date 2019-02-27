@@ -39,6 +39,15 @@ cd /opt/src
 echo 'node --version'
 node --version
 
+echo "cd orchestration-desk"
+cd orchestration-desk
+
+echo 'yarn install'
+yarn install
+
+echo "cd toggle-refresher"
+cd ../toggle-refresher
+
 echo 'yarn install'
 yarn install
 
